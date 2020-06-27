@@ -1,0 +1,86 @@
+.container {
+    max-width: 960px;
+  }
+  .nav-item{
+    font-size: 18px;
+  }
+  .nav-item:hover{
+      font-size:15px;
+      background-color: white;
+      color:black;
+  }
+  .navbar-survival101 {
+    background: #8E0E00;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+  hr
+  {
+    border:1px dashed rgb(48, 32, 32);
+  }
+  /* .navbar-survival101 .navbar-brand {
+    margin-right: 2.15rem;
+    padding: 3px 0 0 0;
+    line-height: 36px;
+  } */
+  
+  .navbar-survival101 .navbar-brand img {
+    vertical-align: baseline;
+  }
+  
+  .navbar-expand-lg .navbar-nav .nav-link {
+    color: #fff;
+  }
+  
+  .search-box {
+    position: relative;
+    height: 34px;
+  }
+  .search-box input {
+    border: 0;
+    border-radius: 3px !important;
+    padding-right: 28px;
+    font-size: 15px;
+  }
+  
+  .search-box .input-group-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .search-box .input-group-btn button {
+    background-color: transparent;
+    border: 0;
+    padding: 4px 8px;
+    color: rgba(0,0,0,.4);
+    font-size: 20px;
+  }
+  
+  .search-box .input-group-btn button:hover,
+  .search-box .input-group-btn button:active,
+  .search-box .input-group-btn button:focus {
+    color: rgba(0,0,0,.4);
+  }
+  
+  @media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right: .7rem;
+      padding-left: .7rem;
+    }
+    
+    .search-box {
+      width: 300px !important;
+    }
+  }
+  .nav-image{
+      height: 80px;
+  }
+  
+  .nav-item:hover{
+    font-size:15px;
+    background-color: rgb(29, 26, 26);
+    color:rgb(20, 6, 70);
+}

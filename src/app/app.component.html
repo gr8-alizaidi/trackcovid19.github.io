@@ -1,0 +1,32 @@
+<app-header></app-header>
+<br>
+<br>
+<br>
+<br>
+<div class="container-fluid">
+    <div class="row" >
+        <div class="col-md-7 col-sm-12 ">
+            <div class="header">
+                <h1 >C<img src="assets/o.gif" height="108" width="108">R<img src="assets/o.gif" height="108" width="108">NA</h1><br>
+                <div>LIVE TRACKING WEBSITE</div>
+              </div>
+        </div>
+        <div class="col-md-5 col-sm-12">
+            <img src="assets/GIF-Animated-Corona.gif"  class="img-rounded T">
+        </div>
+    </div>
+</div>
+    <div class="bt"><a routerLink="country" data-toggle="modal" data-target="#myModal" class="button button5 btn btn-danger btn-large "> <span class="spinner-grow spinner-grow-sm"></span> Status by Country Name</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a [routerLink]="[{outlets:{global:['global']}}]" routerLinkActive="active" data-toggle="modal" data-target="#myModal" class="button button5 btn btn-primary btn-large "><span class="spinner-grow spinner-grow-sm"></span>Track Global status</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a [routerLink]="[{outlets:{whole:['whole']}}]" routerLinkActive="active" data-toggle="modal" data-target="#myModal" class="button button5 btn btn-warning  btn-large"><span class="spinner-grow spinner-grow-sm"></span> Whole Record</a>
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div *ngIf="router.url=='/country'"><router-outlet></router-outlet></div>
+<router-outlet name="global"></router-outlet>
+<router-outlet name="whole"></router-outlet>
+<app-footer></app-footer>

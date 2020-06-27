@@ -1,0 +1,32 @@
+
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">GLobal Status</h4>
+                  <button type="button" class="close" data-dismiss="modal" (click)="navigate()">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <table border="1" class="table-responsive">
+                      <tr>
+                          <th class="table-warning">New Confirmed</th><th class="table-warning">Total Confirmed</th><th class="table-danger">New Death</th><th class="table-danger">Total Death</th><th class="table-primary">New Recovered</th><th class="table-primary">Total Recovered</th>
+                      </tr>
+                      <tr><td class="table-warning">{{global.NewConfirmed}}</td><td class="table-warning">{{global.TotalConfirmed}}</td><td class="table-danger">{{global.NewDeaths}}</td><td class="table-danger">{{global.TotalDeaths}}</td><td class="table-primary">{{global.NewRecovered}}</td><td class="table-primary">{{global.TotalRecovered}}</td></tr>
+                  </table>
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal" (click)="navigate()">Close</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        
+        

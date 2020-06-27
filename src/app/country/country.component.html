@@ -1,0 +1,40 @@
+ <!-- The Modal -->
+ <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">
+            <select class="selectpicker" data-live-search="true"  (change)="onChange($event)" >
+                <option>Select a Country</option>
+                <option *ngFor="let data of cntry" value="{{data.Slug}}">{{data.Country}}</option>
+              </select><select class="selectpicker" data-live-search="true"  (change)="onChange2($event)" >
+                <option>Select a date</option>
+                <option *ngFor="let data of show" value="{{data.Date}}">{{data.Date| date:"dd/mm/yyyy" }}</option>
+              </select>
+          </h4>
+          <button type="button" class="close" data-dismiss="modal" (click)="navigate()">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="container-fluid">
+          <table border="1" class="table-responsive">
+            <tr>
+                <th class="table-warning">Confirmed   </th>&nbsp;&nbsp;<th class="table-danger">Deaths   </th>&nbsp;&nbsp;<th class="table-primary">Recovered    </th>&nbsp;&nbsp;<th class="table-danger">Active</th>
+            </tr>
+           <tr >
+              <td class="table-warning">{{Confirmed}}</td>&nbsp;&nbsp;<td class="table-danger">{{Deaths}}</td>&nbsp;&nbsp;<td class="table-primary">{{Recovered}}</td>&nbsp;&nbsp;<td class="table-danger">{{Active}}</td>
+             
+            </tr>
+          </table>
+        </div></div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal" (click)="navigate()">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>

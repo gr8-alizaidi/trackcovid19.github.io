@@ -1,0 +1,35 @@
+ <!-- The Modal -->
+ <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">TOTAL RECORDS
+          </h4>
+          <button type="button" class="close" data-dismiss="modal" (click)="navigate()">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="container-fluid">
+          <table border="1" class="table-responsive">
+            <tr>
+                <th class="table-warning">Country</th><th class="table-danger">Country Code</th><th class="table-primary">New Confirmed</th><th class="table-danger">Total Confirmed</th><th class="table-warning">New Deaths</th><th class="table-primary">Total Deaths</th>
+                <th class="table-warning">Date</th></tr>
+           <tr *ngFor="let c of global" >
+              <td class="table-warning">{{c.Country}}</td><td class="table-danger"> {{c.CountryCode}}</td><td class="table-danger">{{c.NewConfirmed}}</td><td class="table-primary">{{c.TotalConfirmed}}</td><td class="table-warning">{{c.NewDeaths}}</td>
+              <td class="table-primary">{{c.TotalDeaths}}</td>
+              <td class="table-warning">{{c.Date | date:"short"}}</td>
+             
+            </tr>
+          </table>
+        </div></div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal" (click)="navigate()">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>

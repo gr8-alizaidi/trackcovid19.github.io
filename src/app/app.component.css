@@ -1,0 +1,50 @@
+.container{
+    height:500px;       
+}
+.header {
+    padding: 60px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    text-decoration: wavy;
+    text-shadow: 2px 2px #ff0000;
+    font-family: cursive;
+  }
+  .T{
+      overflow: hidden;
+      float: left;
+  }
+  h1{
+      font-size: 128px;font-family: Aclonica;color: #ECE9E6;  /* fallback for old browsers */
+      color: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+      color: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      
+font-weight: bold;
+  }
+  @media(max-width:700px)
+  {
+      .header h1{
+          padding: 40px;
+          font-size: 30px !important;
+      }
+      .header h1 img{
+          height: 30px;
+          width: 30px;
+      }
+      .header{
+          font-size: 24px;
+      }
+      .T{
+          width: 100%;
+          padding: 60px;
+          text-align: center;
+      }
+  }
+  .button5{
+      border-radius: 25%;
+      size: 6vw;
+  }
+  .bt{
+    padding: 60px;
+    text-align: center;
+  }
